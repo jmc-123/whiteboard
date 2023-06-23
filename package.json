@@ -6,7 +6,7 @@
   "directories": {},
   "scripts": {
     "build": "webpack --config config/webpack.build.js",
-    "start:dev": "apidoc -i scripts/ -o ./dist/apidoc/ && node scripts/server.js --mode=development",
+    "start:dev": "apidoc -i scripts/ -o ./public/apidoc/ && node scripts/server.js --mode=development",
     "start:prod": "npm run build && npm run start",
     "start": "apidoc -i scripts/ -o ./dist/apidoc/ && node scripts/server.js --mode=production",
     "test": "jest",
